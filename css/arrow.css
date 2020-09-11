@@ -1,0 +1,29 @@
+.arrow {
+    box-sizing: border-box;
+    height: 2.5vw;
+    width: 2.5vw;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+    z-index: 10;
+}
+
+.arrow:hover {
+    border-bottom-width: 3px;
+    border-right-width: 3px;
+}
+
+#bottom {
+    position: absolute;
+    bottom: 20px;
+    align-self: center;
+}
+
+@media (max-width: 480px) {
+    .arrow {
+        height: 5vw;
+        width: 5vw;
+    }
+}
